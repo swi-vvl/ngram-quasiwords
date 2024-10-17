@@ -16,7 +16,7 @@ This code requires numpy and pickle to run. You will need to have both installed
 
 To use this code, simply run `main.py`. It is set by default to generate a list of 345,500,000 quasiwords between 3 and 8 letters in length. **This process will take several minutes and the resulting file will be 3.33 GB in size**. Adjusting the behavior of this program will require manually editing main.py, as it is not yet parameterized.
 
-# Overview summary
+# Brief overview
 The TL;DR of how this code works:
 
 - The n-gram model is initialized with grams = 7 with lines 12-14 in `quasiword.py`, corresponding to a maximum context window length of 6 (grams - 1).
