@@ -7,10 +7,9 @@ This code was written to accomplish a specific goal of increasing the strength o
 https://docs.google.com/document/d/1TEtF3rD9nwuw_kjDFOcJKsg0k9EUzHrlEevtbMWBfa0/edit?usp=sharing
 
 # Examples of "quasiwords"
-Quasiwords are the name I've given to fake words - technically pronounceable within the phonology rules of english, but still gibberish. There are many orders of magnitude more possible quasiwords than there are actual english words. Here are a few examples:
+Quasiwords are the name I've given to fake words - technically pronounceable within the phonology rules of English, but still gibberish. There are many orders of magnitude more possible quasiwords than there are actual english words. Here are a few examples:
 
 - Platacil | Janarius | Daboorig | Malstorg | Roghung | Vicepad | Eoberano | Aturads | Ceturlob | Nadapot | Twinex | Wraxanky | Yoineepa | Sokoutin | Krosonox | Hrogrugg | Cohetorb | Azulikid | Fripeye | Ipacudda
-
 
 # How to use
 This code requires numpy and pickle to run. You will need to have both installed in your python environment. Use `pip install numpy` and `pip install pickle` to install both.
@@ -30,3 +29,7 @@ The TL;DR of how this code works:
 - `ngram.exhaustive_list` calls `ngram._recursive_list` once for each word length between 4 and 8, passing in dynamic context lengths of 3 to 6, determined by `ngram.dynamic_context`
 - `ngram._recursive_list` calls itself, recursively adding letters one after another to create new words. It does this for all possible combinations of letters across the entire learned dataset.
 - A wordlist is returned and written to file, containing 345,500,000 quasiwords.
+
+# Known issues
+- The english_wordlist.txt that the model trains with does not result in a complete comprehension of English phonology rules. This means that the output word list is not exhaustive and contains the occasional clunky or unpronounceable quasiword.
+- This script is capable of generating words that may be offensive. Use with discretion.
