@@ -1,14 +1,15 @@
 import quasiword as qw
 
-
+# Reset the model and re-learn from the specified wordlist.
 def reset_and_learn():
     qw.reset()
     qw.learn_wordlist_file('english_wordlist.txt')
     qw.autolearn()
 
 
+# Load the model from file and output a wordlist
 def load_and_generate():
-    # qw.init()
+    qw.init()
     qw.generate_wordlist(3, 8)
 
 
