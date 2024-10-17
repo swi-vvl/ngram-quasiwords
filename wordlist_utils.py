@@ -23,28 +23,6 @@ illegal = []
 for letter in alphabet:
     illegal.append(letter * 3)
 
-# Build illegal consonant combinations
-# illegal_starts += char_zip('b', 'bcdfgkmnpqstvxz')
-# illegal_starts += char_zip('c', 'bcdfgjkmpqsvwx')
-# illegal_starts += char_zip('d', 'bcdfgklmnpqstx')
-# illegal_starts += char_zip('f', 'bcdfgkmnpqstvxz')
-# illegal_starts += char_zip('g', 'bcdfgjkpqstvxz')
-# illegal_starts += char_zip('h', 'bcdfghjklmnpqstvwxz')
-# illegal_starts += char_zip('j', 'bcdfgjklmnpqrstvwxz')
-# illegal_starts += char_zip('k', 'bcdfgkpqtxz')
-# illegal_starts += char_zip('l', 'bcdfgjkmnpqstvwxz')
-# illegal_starts += char_zip('m', 'bcdfgjklmpqrstvwxz')
-# illegal_starts += char_zip('n', 'bcdfgjklmnpqrstvwxz')
-# illegal_starts += char_zip('p', 'bcdgjkmpqwxz')
-# illegal_starts += char_zip('q', 'bcdfghjklmnpqstvxz')
-# illegal_starts += char_zip('r', 'bcdfgjklmnpqrstvwxz')
-# illegal_starts += char_zip('s', 'djsx')
-# illegal_starts += char_zip('t', 'bdfgknpqtvx')
-# illegal_starts += char_zip('v', 'bcdfgjkmnpqstvwxz')
-# illegal_starts += char_zip('w', 'bcdfgjklmnpqstvwxz')
-# illegal_starts += char_zip('x', 'bcdfghjklmnpqrstvwxz')
-# illegal_starts += char_zip('z', 'bcdfgjkmpqrstvxz')
-
 
 # List Operations ======================================================================================================
 
@@ -195,9 +173,6 @@ def fw_export_wordlist(filename: str, wordlist: [str]):
         for word in wordlist:
             f.write(word)
             f.write('\n')
-    # wordlist = [word + '\n' for word in wordlist]
-    # with open(filename, 'w') as f:
-    #     f.writelines(wordlist)
     print(f'wordlist_utils: Finished exporting wordlist.')
 
 
