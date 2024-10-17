@@ -9,7 +9,7 @@ https://docs.google.com/document/d/1TEtF3rD9nwuw_kjDFOcJKsg0k9EUzHrlEevtbMWBfa0/
 # How to use
 This code requires numpy and pickle to run. You will need to have both installed in your python environment. Use `pip install numpy` and `pip install pickle` to install both.
 
-To use this code, simply run `main.py`. It is set by default to generate a list of 345,000,000 quasiwords. **This process will take several minutes and the resulting file will be 3.33 GB in size**. Adjusting the behavior of this program will require manually editing main.py, as it is not yet parameterized.
+To use this code, simply run `main.py`. It is set by default to generate a list of 345,500,000 quasiwords between 3 and 8 letters in length. **This process will take several minutes and the resulting file will be 3.33 GB in size**. Adjusting the behavior of this program will require manually editing main.py, as it is not yet parameterized.
 
 # Overview summary
 The TL;DR of how this code works:
