@@ -1,5 +1,4 @@
 import quasiword as qw
-import cProfile
 
 
 def reset_and_learn():
