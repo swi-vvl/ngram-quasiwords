@@ -6,6 +6,12 @@ This code was written to accomplish a specific goal of increasing the strength o
 
 https://docs.google.com/document/d/1TEtF3rD9nwuw_kjDFOcJKsg0k9EUzHrlEevtbMWBfa0/edit?usp=sharing
 
+# Examples of "quasiwords"
+Quasiwords are the name I've given to fake words - technically pronounceable within the phonology rules of english, but still gibberish. There are many orders of magnitude more possible quasiwords than there are actual english words. Here are a few examples:
+
+- Platacil | Janarius | Daboorig | Malstorg | Roghung | Vicepad | Eoberano | Aturads | Ceturlob | Nadapot | Twinex | Wraxanky | Yoineepa | Sokoutin | Krosonox | Hrogrugg | Cohetorb | Azulikid | Fripeye | Ipacudda
+
+
 # How to use
 This code requires numpy and pickle to run. You will need to have both installed in your python environment. Use `pip install numpy` and `pip install pickle` to install both.
 
@@ -14,7 +20,7 @@ To use this code, simply run `main.py`. It is set by default to generate a list 
 # Overview summary
 The TL;DR of how this code works:
 
-- The n-gram model is initialized with grams = 7 with lines 12-14 in `quasiword.py`, corresponding to a maximum context window length of 7 - 1 = 6.
+- The n-gram model is initialized with grams = 7 with lines 12-14 in `quasiword.py`, corresponding to a maximum context window length of 6 (grams - 1).
 - `ngram.learn_words` is called with a list of ~368,000 English words to train with.
 - `ngram.learn_words` calls `ngram._slice_and_learn` with each word.
 - `ngram._slice_and_learn` slices each word into smaller substrings of lengths from 2 to 6, then calls `ngram._learn` with each slice.
