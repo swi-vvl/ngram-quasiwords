@@ -5,9 +5,7 @@ import cProfile
 def reset_and_learn():
     qw.reset()
     qw.learn_wordlist_file('english_wordlist.txt')
-    # qw.learn_wordlist_files(['english_wordlist.txt',
-    #                          'triples.txt'])
-    qw.autolearn(gamma=0.62)
+    qw.autolearn()
 
 
 def load_and_generate():
